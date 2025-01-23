@@ -12,7 +12,7 @@ public class Fragrance {
     @Column(name="url", unique = true)
     private String url;
 
-    private String perfume;
+    private String name;
     private String brand;
     private String country;
     private String gender;
@@ -41,16 +41,16 @@ public class Fragrance {
     public Fragrance() {
     }
 
-    public Fragrance(String perfume) {
-        this.perfume = perfume;
+    public Fragrance(String name) {
+        this.name = name;
     }
 
-    public Fragrance(String url, String perfume, String brand, String country, String gender,
+    public Fragrance(String url, String name, String brand, String country, String gender,
                      String rating_val, int rating_count, int year, String top, String middle,
                      String base, String perfumer1, String perfumer2, String mainaccord1, String mainaccord2,
                      String mainaccord3, String mainaccord4, String mainaccord5) {
         this.url = url;
-        this.perfume = perfume;
+        this.name = name;
         this.brand = brand;
         this.country = country;
         this.gender = gender;
@@ -81,12 +81,12 @@ public class Fragrance {
         this.url = url;
     }
 
-    public String getPerfume() {
-        return perfume;
+    public String getName() {
+        return name;
     }
 
-    public void setPerfume(String perfume) {
-        this.perfume = perfume;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getBrand() {
